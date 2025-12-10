@@ -9,8 +9,8 @@ const About: React.FC = () => {
         {/* Left: Sticky Image Area */}
         <div className="relative h-[50vh] lg:h-auto lg:sticky lg:top-14 border-b lg:border-b-0 lg:border-r border-zinc-800 overflow-hidden group">
           <img
-            src="assets/images/naflanmohamed.jpg"
-            alt="Workspace"
+            src="/assets/images/naflanmohamed.jpg"
+            alt="naflan mohamed"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
           />
           <div className="absolute inset-0 bg-zinc-950/50"></div>

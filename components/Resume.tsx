@@ -24,7 +24,7 @@ const Resume: React.FC = () => {
             className="flex items-center gap-2"
             onClick={() => {
               const link = document.createElement('a');
-              link.href = 'assets/Naflan_Mohamed_Resume_MERN.pdf';
+              link.href = '/assets/Naflan_Mohamed_Resume_MERN.pdf';
               link.download = 'Naflan_Mohamed_Resume_MERN.pdf';
               document.body.appendChild(link);
               link.click();
