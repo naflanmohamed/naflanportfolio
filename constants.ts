@@ -181,7 +181,7 @@ export const PROJECTS: Project[] = [
     tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "GitHub", "Vercel"],
     link: "https://autofleetrentals.vercel.app/",
     github: "https://github.com/naflanmohamed/AutoFleet-Rentals",
-    image: "/assets/images/autofleetrentals.png",
+    image: "/assets/images/autofleetrentals.webp",
     category: "Website",
     year: "2025"
   },
@@ -192,7 +192,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next.js", "Tailwind", "Gemini API", "Stripe"],
     link: "https://aistudyhub-pi.vercel.app/",
     github: "https://github.com/naflanmohamed/ai-study-hub",
-    image: "/assets/images/aistudyhub.png",
+    image: "/assets/images/aistudyhub.webp",
     category: "AI / Website",
     year: "2025"
   },
@@ -203,7 +203,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "Chart.js"],
     link: "https://naflanmohamed.github.io/expense-tracker/",
     github: "https://github.com/naflanmohamed/expense-tracker",
-    image: "/assets/images/ExpenseTracker.png",
+    image: "/assets/images/ExpenseTracker.webp",
     category: "Website",
     year: "2025"
   },
@@ -214,7 +214,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS", "Canvas API 2D"],
     link: "https://naflanmohamed.github.io/Interstellar-Link/#",
     github: "https://github.com/naflanmohamed/Interstellar-Link",
-    image: "/assets/images/interstellarlink.png",
+    image: "/assets/images/interstellarlink.webp",
     category: "Website",
     year: "2025"
   },
@@ -225,7 +225,7 @@ export const PROJECTS: Project[] = [
     tech: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
     link: "https://naflanmohamed.github.io/SkyCast-Weather-App/",
     github: "https://github.com/naflanmohamed/SkyCast-Weather-App",
-    image: "/assets/images/skycastweatherapp.png",
+    image: "/assets/images/skycastweatherapp.webp",
     category: "Website",
     year: "2024"
   }
