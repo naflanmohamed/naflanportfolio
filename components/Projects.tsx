@@ -29,8 +29,7 @@ const Projects: React.FC<ProjectsProps> = ({ onViewArchive }) => {
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16">
           <div>
-            <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter mb-4">SELECTED_WORKS</h2>
-            <p className="font-mono text-zinc-500 text-sm">/// DEPLOYMENTS</p>
+            <h2 className="text-3xl md:text-5xl font-black text-white tracking-tighter mb-4">SELECTED_WORKS</h2>
           </div>
           <div className="flex gap-2 font-mono hidden md:flex">
             <button onClick={() => scroll('left')} className="p-4 border border-zinc-800 hover:bg-white hover:text-black transition-colors">

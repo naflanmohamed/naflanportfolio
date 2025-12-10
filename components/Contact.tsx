@@ -46,7 +46,7 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="p-8 md:p-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">INITIATE_PROTOCOL</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-8">INITIATE_PROTOCOL</h2>
 
             <div className="grid md:grid-cols-2 gap-12">
               <div>
