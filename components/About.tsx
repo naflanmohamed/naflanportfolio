@@ -9,7 +9,7 @@ const About: React.FC = () => {
         {/* Left: Sticky Image Area */}
         <div className="relative h-[50vh] lg:h-auto lg:sticky lg:top-14 border-b lg:border-b-0 lg:border-r border-zinc-800 overflow-hidden group">
           <img
-            src="https://images.unsplash.com/photo-1550439062-609e1531270e?q=80&w=800&auto=format&fit=crop"
+            src="assets/images/naflanmohamed.jpg"
             alt="Workspace"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
           />

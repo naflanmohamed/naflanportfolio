@@ -1,7 +1,7 @@
 import React from 'react';
-import { ArrowDownRight, Github, Globe, Linkedin, Mail } from 'lucide-react';
+import { ArrowDownRight, Globe } from 'lucide-react';
 import Button from './Button';
-import { HERO_CONTENT } from '../constants';
+import { HERO_CONTENT, SOCIALS } from '../constants';
 
 const Hero: React.FC = () => {
   return (
@@ -76,31 +76,18 @@ const Hero: React.FC = () => {
                 <ArrowDownRight className="w-8 h-8 text-brand-300" />
               </div>
 
-              <div className="mt-4 flex flex-wrap gap-4">
-                <a
-                  href="https://linkedin.com/in/naflan-mohamed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-brand-300 transition-colors"
-                >
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a
-                  href="https://github.com/naflanmohamed"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-brand-300 transition-colors"
-                >
-                  <Github className="w-6 h-6" />
-                </a>
-                <a
-                  href="mailto:mnnaflanmohamed@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-zinc-500 hover:text-brand-300 transition-colors"
-                >
-                  <Mail className="w-6 h-6" />
-                </a>
+              <div className="flex gap-4 mt-4">
+                {SOCIALS.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target={social.name === 'Email' ? undefined : "_blank"}
+                    rel={social.name === 'Email' ? undefined : "noopener noreferrer"}
+                    aria-label={social.name === 'Email' ? "Email Me" : `${social.name} Profile`}
+                  >
+                    <social.icon className="w-6 h-6 text-zinc-400 hover:text-brand-300 transition-colors" />
+                  </a>
+                ))}
               </div>
 
 
