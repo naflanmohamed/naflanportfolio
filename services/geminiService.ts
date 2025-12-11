@@ -1,13 +1,13 @@
 import { GoogleGenAI } from "@google/genai";
-import { 
-  HERO_CONTENT, 
-  ABOUT_CONTENT, 
-  EXPERIENCES, 
-  EDUCATION, 
-  CERTIFICATIONS, 
-  SKILLS, 
-  PROJECTS, 
-  SOCIALS 
+import {
+  HERO_CONTENT,
+  ABOUT_CONTENT,
+  EXPERIENCES,
+  EDUCATION,
+  CERTIFICATIONS,
+  SKILLS,
+  PROJECTS,
+  SOCIALS
 } from "../constants";
 
 // Initialize the API client
@@ -20,27 +20,27 @@ const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
  * This ensures the AI always has the most up-to-date information about the portfolio.
  */
 const generateSystemContext = (): string => {
-  const experiencesText = EXPERIENCES.map(e => 
+  const experiencesText = EXPERIENCES.map(e =>
     `- Role: ${e.role} at ${e.company} (${e.period})\n  Description: ${e.description}\n  Tech Stack: ${e.technologies.join(', ')}`
   ).join('\n\n');
 
-  const educationText = EDUCATION.map(e => 
+  const educationText = EDUCATION.map(e =>
     `- ${e.degree} at ${e.institution} (${e.year})`
   ).join('\n');
 
-  const certsText = CERTIFICATIONS.map(c => 
+  const certsText = CERTIFICATIONS.map(c =>
     `- ${c.name} issued by ${c.issuer} (${c.year})`
   ).join('\n');
 
-  const skillsText = SKILLS.map(s => 
+  const skillsText = SKILLS.map(s =>
     `- ${s.name}: ${s.skills.join(', ')}`
   ).join('\n');
 
-  const projectsText = PROJECTS.map(p => 
+  const projectsText = PROJECTS.map(p =>
     `- Project: ${p.title} (${p.year}) [${p.category}]\n  Description: ${p.description}\n  Tech: ${p.tech.join(', ')}\n  Links: ${p.link || ''} ${p.github || ''}`
   ).join('\n\n');
 
-  const socialsText = SOCIALS.map(s => 
+  const socialsText = SOCIALS.map(s =>
     `- ${s.name}: ${s.href}`
   ).join('\n');
 
@@ -87,17 +87,17 @@ const generateSystemContext = (): string => {
   `;
 };
 
-export const sendMessageToGemini = async (message: string, history: {role: string, parts: {text: string}[]}[] = []): Promise<string> => {
+export const sendMessageToGemini = async (message: string, history: { role: string, parts: { text: string }[] }[] = []): Promise<string> => {
   try {
     // We use gemini-2.5-flash for fast, responsive chat interactions
     const model = 'gemini-2.5-flash';
-    
+
     // Construct the request
     // We pass the history + the new user message
     const response = await ai.models.generateContent({
       model: model,
       contents: [
-        ...history, 
+        ...history,
         { role: 'user', parts: [{ text: message }] }
       ],
       config: {
