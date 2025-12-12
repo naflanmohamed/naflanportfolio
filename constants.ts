@@ -159,7 +159,7 @@ export const SKILLS: SkillCategory[] = [
   {
     name: "Frontend Development",
     icon: Layout,
-    skills: ["React", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux", "Sass", "HTML", "CSS", "JavaScript"]
+    skills: ["React.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux", "Sass", "HTML", "CSS", "JavaScript"]
   },
   {
     name: "Backend Architecture",
@@ -178,7 +178,7 @@ export const PROJECTS: Project[] = [
     id: 1,
     title: "Vehicle Rental Platform",
     description: "A vehicle rental platform that allows users to browse available vehicles, view detailed information, and book easily. and includes admin features to manage fleet inventory, and update vehicle data.",
-    tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "GitHub", "Vercel"],
+    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS", "GitHub", "Vercel"],
     link: "https://autofleetrentals.vercel.app/",
     github: "https://github.com/naflanmohamed/AutoFleet-Rentals",
     image: "/assets/images/autofleetrentals.webp",
@@ -189,7 +189,7 @@ export const PROJECTS: Project[] = [
     id: 2,
     title: "AI Study Hub",
     description: "AI Study Hub helps students save time by using AI tools for summarizing, note generation, and quick learning support all in one simple interface.",
-    tech: ["Next.js", "Tailwind", "Gemini API", "Stripe"],
+    tech: ["React.js", "Tailwind", "Gemini API",],
     link: "https://aistudyhub-pi.vercel.app/",
     github: "https://github.com/naflanmohamed/ai-study-hub",
     image: "/assets/images/aistudyhub.webp",
