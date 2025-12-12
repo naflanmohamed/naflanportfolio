@@ -1,6 +1,6 @@
 import React from 'react';
 import { EXPERIENCES, EDUCATION, CERTIFICATIONS, SKILLS } from '../constants';
-import { Download, Award, Briefcase, GraduationCap, Cpu } from 'lucide-react';
+import { Download, Award, Briefcase, GraduationCap, Cpu, ExternalLink } from 'lucide-react';
 import Button from './Button';
 
 const Resume: React.FC = () => {
@@ -99,12 +99,36 @@ const Resume: React.FC = () => {
 
           {/* Certifications */}
           <div>
-            <div className="flex items-center gap-4 mb-8">
-              <div className="p-2 bg-zinc-900 border border-zinc-800">
-                <Award className="text-brand-300" size={20} />
+            <div className="flex justify-between items-center mb-8">
+              <div className="flex items-center gap-4">
+                <div className="p-2 bg-zinc-900 border border-zinc-800">
+                  <Award className="text-brand-300" size={20} />
+                </div>
+                <h2 className="text-2xl font-bold text-white tracking-tight">CERTIFICATIONS</h2>
               </div>
-              <h2 className="text-2xl font-bold text-white tracking-tight">CERTIFICATIONS</h2>
+
+              {/* Enhanced Coursera Profile Badge */}
+              <a
+                href="https://www.coursera.org/learner/naflanmohamed"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative overflow-hidden group flex items-center gap-3 px-4 py-2 bg-zinc-900/50 border border-zinc-800 hover:border-brand-300/50 transition-all duration-300"
+              >
+                <div className="absolute inset-0 bg-brand-300/5 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                <div className="relative z-10 flex items-center gap-3">
+                  <div className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-300 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-300"></span>
+                  </div>
+                  <div className="flex flex-col items-start">
+                    <span className="text-[9px] font-mono text-zinc-500 uppercase tracking-wider leading-tight group-hover:text-brand-300/80 transition-colors">Verified_Learner</span>
+                    <span className="text-xs font-bold text-white group-hover:text-brand-300 transition-colors tracking-wide">COURSERA</span>
+                  </div>
+                  <ExternalLink size={14} className="text-zinc-600 group-hover:text-brand-300 transition-colors ml-1" />
+                </div>
+              </a>
             </div>
+
             <div className="space-y-4">
               {CERTIFICATIONS.map((cert) => (
                 <a href={cert.link} target="_blank" rel="noopener noreferrer" className="text-brand-300 hover:underline">
