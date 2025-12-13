@@ -128,38 +128,11 @@ export const CERTIFICATIONS: CertificationItem[] = [
 
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 1,
-    name: "Alex Morgan",
-    role: "CTO",
-    company: "StartUp Vision",
-    text: "Naflan is a rare breed of developer who understands both the technical intricacies and the business goals. He delivered our MVP two weeks ahead of schedule.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg"
-  },
-  {
-    id: 2,
-    name: "Sarah Jenkins",
-    role: "Product Lead",
-    company: "Creative Pulse",
-    text: "Working with Naflan was an absolute pleasure. His code is clean, documented, and scalable. The new UI he designed increased our user engagement by 40%.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg"
-  },
-  {
-    id: 3,
-    name: "Michael Chen",
-    role: "Founder",
-    company: "DataSphere",
-    text: "I was impressed by his ability to tackle complex backend challenges while maintaining a seamless frontend experience. Highly recommended for full-stack work.",
-    image: "https://randomuser.me/api/portraits/men/85.jpg"
-  }
-];
-
 export const SKILLS: SkillCategory[] = [
   {
     name: "Frontend Development",
     icon: Layout,
-    skills: ["React.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux", "Sass", "HTML", "CSS", "JavaScript"]
+    skills: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bootstrap", "Redux", "Sass", "HTML", "CSS", "JavaScript"]
   },
   {
     name: "Backend Architecture",
