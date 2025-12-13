@@ -29,7 +29,7 @@ export const ABOUT_CONTENT = {
 export const EXPERIENCES: ExperienceItem[] = [
   {
     id: 1,
-    role: "MERN Developer Intern",
+    role: "MERN Stack Developer Intern",
     company: "Fluxxion",
     period: "Jun 2025 — Aug 2025",
     description: "Built responsive React UIs improving page performance by 40% and reducing UI bugs by 30%, including high performance modules such as a scalable Daily Goals Tracker.",

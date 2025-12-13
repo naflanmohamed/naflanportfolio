@@ -25,7 +25,7 @@ const Resume: React.FC = () => {
             onClick={() => {
               const link = document.createElement('a');
               link.href = '/assets/Naflan_Mohamed_CV.pdf';
-              link.download = 'Naflan_Mohamed_Resume_MERN.pdf';
+              link.download = 'Naflan_Mohamed_CV.pdf';
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);
