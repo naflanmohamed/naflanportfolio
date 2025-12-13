@@ -10,15 +10,9 @@ import {
   SOCIALS
 } from "../constants";
 
-// Initialize the API client
-// Note: In a production app, these calls should go through a backend proxy 
-// to avoid exposing the API key if RLS/limits aren't strictly enforced.
+
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
-/**
- * Generates a dynamic system prompt based on the current data in constants.ts.
- * This ensures the AI always has the most up-to-date information about the portfolio.
- */
 const generateSystemContext = (): string => {
   const experiencesText = EXPERIENCES.map(e =>
     `- Role: ${e.role} at ${e.company} (${e.period})\n  Description: ${e.description}\n  Tech Stack: ${e.technologies.join(', ')}`

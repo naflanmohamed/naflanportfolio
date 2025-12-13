@@ -21,7 +21,7 @@ const Resume: React.FC = () => {
           </div>
           <Button
             variant="outline"
-            className="flex items-center gap-2"
+            className="flex items-center gap-2 w-full md:w-auto justify-center"
             onClick={() => {
               const link = document.createElement('a');
               link.href = '/assets/Naflan_Mohamed_CV.pdf';
@@ -99,7 +99,7 @@ const Resume: React.FC = () => {
 
           {/* Certifications */}
           <div>
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 md:gap-0 mb-8">
               <div className="flex items-center gap-4">
                 <div className="p-2 bg-zinc-900 border border-zinc-800">
                   <Award className="text-brand-300" size={20} />
