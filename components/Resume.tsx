@@ -24,8 +24,8 @@ const Resume: React.FC = () => {
             className="flex items-center gap-2 w-full md:w-auto justify-center"
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/assets/Naflan_Mohamed_CV.pdf';
-              link.download = 'Naflan_Mohamed_CV.pdf';
+              link.href = '/assets/Naflan_Mohamed_Resume.pdf';
+              link.download = 'Naflan_Mohamed_Resume.pdf';
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);

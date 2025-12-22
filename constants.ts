@@ -57,10 +57,10 @@ export const EDUCATION: EducationItem[] = [
 export const CERTIFICATIONS: CertificationItem[] = [
   {
     id: 1,
-    name: "Advanced React Skills",
-    issuer: "Scrimba",
+    name: "Meta Full Stack Developer: Front-End & Back-End from Scratch Specialization",
+    issuer: "Meta",
     year: "2025",
-    link: "https://www.coursera.org/account/accomplishments/specialization/8GM7YTD786F6"
+    link: "https://www.coursera.org/account/accomplishments/specialization/MQKDSLXN5C11"
   },
   {
     id: 2,
@@ -71,17 +71,10 @@ export const CERTIFICATIONS: CertificationItem[] = [
   },
   {
     id: 3,
-    name: "Learn React",
+    name: "Advanced React Skills",
     issuer: "Scrimba",
     year: "2025",
-    link: "https://www.coursera.org/account/accomplishments/verify/JLZ0NIGBZ0OZ"
-  },
-  {
-    id: 4,
-    name: "React Basics",
-    issuer: "Meta",
-    year: "2025",
-    link: "https://www.coursera.org/account/accomplishments/verify/L6FV5DWT02SI"
+    link: "https://www.coursera.org/account/accomplishments/specialization/8GM7YTD786F6"
   },
   {
     id: 5,
@@ -110,13 +103,6 @@ export const CERTIFICATIONS: CertificationItem[] = [
     issuer: "Meta",
     year: "2024",
     link: "https://coursera.org/share/b859c3d9dbdd89a4d094886e558d4503"
-  },
-  {
-    id: 9,
-    name: "Introduction to Android Mobile App Development",
-    issuer: "Meta",
-    year: "2023",
-    link: "https://www.coursera.org/account/accomplishments/records/UENMYBCJBD5J"
   },
   {
     id: 10,
